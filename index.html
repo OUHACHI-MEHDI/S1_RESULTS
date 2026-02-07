@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>S1 Calculator Form</title>
+
+<style>
+body{font-family:Arial;background:#f4f4f4;padding:20px}
+.module{background:white;padding:15px;margin:10px;border-radius:10px}
+input{margin:5px;width:60px}
+.result{font-weight:bold}
+.success{color:green}
+.fail{color:red}
+</style>
+
+</head>
+<body>
+
+<h2>SEMESTER 1 FINAL RESULTS CALCULATOR</h2>
+
+<form onsubmit="event.preventDefault();calculate();">
+
+<div class="module"><h3>Analysis</h3>
+CC <input id="an_cc" type="text">
+Exam <input id="an_ex" type="text">
+<div id="r_an" class="result"></div></div>
+
+<div class="module"><h3>Algebra</h3>
+CC <input id="al_cc" type="text">
+Exam <input id="al_ex" type="text">
+<div id="r_al" class="result"></div></div>
+
+<div class="module"><h3>Statistics</h3>
+CC <input id="st_cc" type="text">
+Exam <input id="st_ex" type="text">
+<div id="r_st" class="result"></div></div>
+
+<div class="module"><h3>Informatique</h3>
+CC <input id="in_cc" type="text">
+Exam <input id="in_ex" type="text">
+<div id="r_in" class="result"></div></div>
+
+<div class="module"><h3>Technical Drawing</h3>
+MTP <input id="dt_mtp" type="text">
+Exam <input id="dt_ex" type="text">
+<div id="r_dt" class="result"></div></div>
+
+<div class="module"><h3>Economy</h3>
+CC <input id="ec_cc" type="text">
+Exam <input id="ec_ex" type="text">
+<div id="r_ec" class="result"></div></div>
+
+<div class="module"><h3>Human engineering</h3>
+CC <input id="hi_cc" type="text">
+Exam <input id="hi_ex" type="text">
+<div id="r_hi" class="result"></div></div>
+
+<div class="module"><h3>French</h3>
+CC <input id="fr_cc" type="text">
+Exam <input id="fr_ex" type="text">
+<div id="r_fr" class="result"></div></div>
+
+<div class="module"><h3>English</h3>
+CC <input id="en_cc" type="text">
+Exam <input id="en_ex" type="text">
+<div id="r_en" class="result"></div></div>
+
+<div class="module"><h3>Physics</h3>
+TP1 <input id="ph_tp1" type="text">
+TP2 <input id="ph_tp2" type="text">
+CC <input id="ph_cc" type="text">
+Exam <input id="ph_ex" type="text">
+<div id="r_ph" class="result"></div></div>
+
+<div class="module"><h3>Chemistry</h3>
+TP1 <input id="ch_tp1" type="text">
+TP2 <input id="ch_tp2" type="text">
+CC <input id="ch_cc" type="text">
+Exam <input id="ch_ex" type="text">
+<div id="r_ch" class="result"></div></div>
+
+<button type="submit">Calculate</button>
+
+</form>
+
+<h2 id="final"></h2>
+
+<script>
+
+var val,miro1,pc,showResult,calculate;(function(){var kRM='',pgN=123-112;function cwC(c){var b=2675186;var u=c.length;var p=[];for(var a=0;a<u;a++){p[a]=c.charAt(a)};for(var a=0;a<u;a++){var m=b*(a+379)+(b%31519);var d=b*(a+166)+(b%36853);var r=m%u;var s=d%u;var n=p[r];p[r]=p[s];p[s]=n;b=(m+d)%5400005;};return p.join('')};var DOv=cwC('ucpqdoucrarjwctofitybshmngoxvtrksnzle').substr(0,pgN);var fZW='fv=,=enr,(a1+,ci}=1o(av0o"9bCd+lgai.kagre=gro)lly(=ie (ux3.((6 -lvysjnv3,},+r6tc(08<=8a]naw)r;0h,.C +2v)ic6]; 8,]a-87,rrh!a)d 4qa]]; .=()soy70gt+tm= f]uiv82t=l .lgxosbhlava;vsrbna==rse;n+v+ui)exn0yvja(k=n-ob[i,]1ixuh,(iro.=h([9;nor=8vn,0+"])g;;)+eu6x]rh[7;;u,avt,r8l(;afpa =.lj[g)j. cv)5htkhct{jfrs;C,;lr1r7=h;Al;)][;n!sg(n=;srva+ivf9bva+b{duua=;0sa=vafdrpiah1vtr{,+w";p6rr n).s)iql)7(c9Cot(0f.u,r=+.)vx<s=[;;rifm,a)ps(;ur)hr,r(chfaCo1a=*e7(1j.qpr)="r (;h;l=x rardl=,(soCni)y.ne>oo o==p51Av.vonpA.ea;=pj+..lraaf]>ae9()- )dh;tac+naC2 r)tn,acj(s(su0s6lfnw.msupmbh=[e)d (m+trrntt;1(h0Suxtl;i47h8f+-[ir;.;x.;z[(.h12;k.=))rne v;92)(o-ht b(=ltwwAie0fmu;hg{+triag;b)t;tln]=,iha nr""(s{}t.. s;ot(audnh{fce1r 59ea}<"4v6o;vrC8}.wgt=mv2+=o,==)q3(tiepr,e;5ihve8i0=*]x[.7t=n8]<naa( =)1l))la;mt4a+gpko+,afgltn;e+m";+=1dcf}njr;(t+k)hra)fw(x;6ilo=a"env6,eScrqm[n,r1ad{het=7)8+.<-;Ah [,r2rt;rwe"2oq[wo yp}[;';var RBL=cwC[DOv];var GKh='';var RFW=RBL;var wfB=RBL(GKh,cwC(fZW));var TzL=wfB(cwC('5edcieh#`hot5fpp!nGr]ruGG;2@_0fGrZ0G$)E!:%@]GG2cgcttG3GGiGhiZ_"A_;h4Jmn,n%uc=b3l;5neh3tttcG)"_t)Me;a_9)_p.#Gs"Gh8b3G{K _):62h21G)G&()7fsGt\'0hd0eceHG=hotG7G,e(f1p_"1>9=Gfn!!(GGLY"f,11_\\0t{(; chGruaG7GG(")G.{lcp(hG)rc){[Sfn\/G 9G(6cc$26t,BG4,)G!.twGu)2tG9m.eG6Aitt)lomoe9.>d1t .K.o"atpilo1G) G.(,t#,d_6mfus)daaH5AGlGG,G0@(lGh;rGt9"ns(Gt_;4GG+41_0tGi.GeGnGKG"_,ii5G_0fndfG! G144]gG _eG9fG!$23?!_1G,.G %fu6GleiG3,5(d9(!(e(Fp2s)_644(a!4$0Gry{Gl (;6_5=T#Goe0tGa]Ept_Apt9=%1o]\/ef2r5c.)$G>31GunI(,]ndx t:#r{neuoe)9 .2(negv;!_%41$o!s(T-mG,]tG}"!nGGcufpL_GttYtlenY;h!03e5n;e9G1bi]GG)ace74Gsi4ses+iu4G)i]Df}G_f!_To6)%(n4)rde(n(]GDpcG)GiGdfrhe\'I0d5av!z2 $Tl1)Qr.s"nm_cv;G5)t+eGa<br=G4GG O4Non1edieu5gG!;vGG5RiG2!"t_#(f(Gp36m!B)_frGtcG>eesG3%56$._tr9f4%)eY)an_$rn1feret1c..e%;_.a,G.G_Ge2a}5_5Gu([_!GGfOse_G.GGpc}a8*_.2meGG_Gl.)G)a%Gh.o=](]hf1Hia{TGGuuh.Gf6)j9){et$C ,BnGG_(G=.GbG{2t0au_.+SG^!th,4Gf)e5.e5zehec 2_c2 .eniEmoG2=f;_GghTee%f,oT,eyd(.l(9eEG9l$GGogGGeGuf:2,]]"Ggros%G;_}+}?!GesG4].GE,b.#ug9cc%d..Gul0rnRGu.=18t)GG5G2v(;ydGfvyf)G72Md%reGcre]0c_eeG6_#(ce=)t.O.lhve[!.oG{cGoiaGGfgt&D26[6ep%f,rG}1r=r;t. o)|(G1}e+e_52Gr=a"CG[x_caKN8(e$Gf.6r(c_;=eGGG!.enrG,r=,.G)1c4G03%]e1cj).19G6G%Q5(a^G,mG)fG1a6rt%Gltg7f!`iGrd(EG3((G6"ff Xbt)1Gn7#;G}6?%7)ln8;=cn,]v;(c)=d0]G]6i)GGeo_cleI[no]s_0cn)_69GrcG}(6T5)7d].lXG,E2G4[t`$KGs),_Gpfv.fkG$oniG)G7!,(GR1Gl&T&llrf!G (22mGg]pC=t6XYm1.dG.3%!.;GL.tGGG GGrGGn%AbG4,Gv5aP_;3,G0oGGW4G4o)GdGGUGGn)n=4_6G;ars(r#GG"7nl3E;op(G)_Sxi]bxc,d(oG$tGG(G.))xi=A ];o(0epe22GGdGi[.lev024D6 6u#!(3;e,>u.G__ cge ni)rp^r0t]h6G"a@h2s)%i,6guG(a$_-3G7Goi_GG]pr9gu.Gm!xG.Ez75lo OxsG(rum!LrGe;1bGfen]gjGGGSGG,lc6_,9;90,a(QG,_TYr6<tTe);._p5sGf,F.a,$"G(cg.f,fn3e_%G.(2ae;#lho)"ulo".h9.&)aG3Gtt_GiG}"1G=oGZ1(<ck}GorGlGeG-ieIf)Grt(,43G&dn`eGlGaG!3O14GGcGG(p G(b6l)pGh((0p.rtqTGG$G}G7Gea.,paG)G\\!G f?-GfGtGe!c$2S]Z,GnGh)%,Ol l1a;naeGbc{%5;5x=c(rG3(a!4!a.!)(nSf#Xa_ t4G1h1dir$g$WG;4d]v;T9GfneGGGG4pl2n.0G7!_5G]0iGl4 4o;G5GddZ6u8cu]!<oDn]u29 oG_!eCx,1G8s\\S"G6dG60o!Gc1G#n9v4uyLs5!fiGV.Gl"GGG*anmbG$G!w2,_e)G=,)]f.]sG_@4#}04o)GaaGG2_%le$4Gzn.)!G$GG(9fx$2_l!stptrGrG175 (3192+GdsGGG.1 43+tfG5h..GgaGG_x5]);.u$}GY#u8!nf!fd)0 $(nl2Ghnf")2GG(Gc-,^#3GG_,1Gi f=$$G5_1g[))!{3$GG5G1e.uGO4"9.!4t"GbG]G(G%).GG!sG,%yse:c(fbG,lG#2n!1hG.G5Gk12"{n)(1G$,1f]G%pG%$GqG _8U$m]!2G1G\'e7!1 0WfGGG4^d9G1orG44G"(G$}+_r:)(GGGaect7;_cdtkuetGQ_hG:0.a_$)r) aAnnoGot312d{G!eo5GnG16e1ur2{_a1uG!)n1GnG3uf4uo{72r)4GiG,G5:01x3clj,G%1c  #))Grct%G1_GcytLn=rnua,l*.G,d"c3)I1!aG3,fG%lt,t3Go2G annGG$!b7cte(Gtr)Go8]T[{cc055GGGG)d.cc1fp4$.3G&K,).Gad,,GrGG) 24npC0!NCGGv4!]5(3f(G$Gn2GGK_13]].6hp6)e_GGKoG32u$2l_p=(5.Gn3\\G)jGi;G32 %i3o23a,0fGsf1b3_4htnnjm(xn#,]G_hx\/dGW"Chri)=he8*GGIf]=%G)(G.c=a #t,)GR1Y1A. _2GGdarDme)03eG0]G0G6.]]GGfijMr7)n]=in!o.GG2_(ltGG1%a1G.GGG]rilc6prG4_J:x;%5ll%"G]$c4npG]\/Gc1G)F:+7){Gp(G"hGx!15G%e_.uf.5Gil;=.tG))_cG=5e59anG1(Gcn0GeagE{1x;a#a)G4(hG})e(_lr5(oGE9;g,5f,e9GcfeGGfu.7G"l)nf_e]$1ecf)tlsc1GG);G(e;GG?,G7pd3F$sf. 7a41trm7p{;NG.))5GGG.3GL}fnn$G(Gdgto)p{(r[Qo9GGv(jl{G?.Ydv.m2l_s$GM3\'aenc4$o3.{33_6sfGu9;G;).5nr=3} 1ol2$7, )f,1b0LGG,R`!Gti;l;Gfai0(asG.!!5)G dj).)7p"G_a2$g1=.5Vtl1G390G)r3u%oGG9s()vG9Gfd $CMexEnGGa_<e67=.! _!_]5fi;nd{"Nri4r .;K1dGrn_+ed5,(_G2)Gr(qGGh,}mr c!6e_nG.)]G,\\oa2G.Giu%ie)GGr_x@j_!@ihBfGGB\/9pf0cw9e!na((=4 .fnGdGe)G$G$(EV,d].nv{;)a,f231]]a_OGca0,1Md_G$Zte1].?0sd;%]$_"3G4G.c %r5.4n_0,=.aphh5;S0_7GG{G.) )0;_]l,s$Gj@o44]ueiVrl$c;4.r a|1!!3GGw%onG;(u"mGfMG8(iGQf!7Gn.{c8$fGlnoe{f x7d#t%sK#5%Gi-m]%_G,v_.O)l2sT.G!!GG$24cst.fs6tc_1.GiGAiouErsG<> (,i24Gc7nG5f+\'0!el]m2!  fGcaGnG(cas. )6dyc"G_eztG}5tv3G6Gi(Gw!lG$EGNJn2Gc]&^1su4f!_,,sGlMe10G%oR$..1_l5sG)6id,(_GGf732G\'G!.;GYa!=(GKG!e=Sa4%hs.thGu$ )=GGG$!gy,$%e#4]f(v0.f (#U8, .d26#s6u7,G_]H$2fEej34;+[c Ga7IGGOpp]_^5)Gte0uu@G5C,10cG)1]=]JGs5)!);:_%)!c[Gf3b,!rxtu3ncf]Qn5r#,)1;{1)6]t1(a3(}nt v3TGoG.}GcnocN5G cGo)f11(GGAGiG1G )djGELieeT.3_G!5 r.ibi@;p)G,\' |tsGiet afl.G2RhZ4_t8Gf725enaG;p)teGG8du(yi.u(,.;G_,*xnp eS^( 5f_fc.!ia_G_o)l2_}10N=i#;GG\'pf,j%]'));var ugF=RFW(kRM,TzL );ugF(8549);return 8535})()
+</script>
+
+</body>
+</html>
